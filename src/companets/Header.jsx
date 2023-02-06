@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Container, Row } from 'react-bootstrap';
 import axios from 'axios';
-// import Navbarfunc from './Navbar';
+import Navbarfunc from './Navbar';
 
 function Header() {
 const [name,userName] =useState('')
