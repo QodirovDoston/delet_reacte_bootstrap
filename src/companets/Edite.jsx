@@ -3,7 +3,7 @@
 // import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 // import { useNavigate, useParams } from 'react-router-dom'
 
-export default function EditePage() {
+// export default function EditePage() {
 
 
     // const [name, setName] = useState()
@@ -38,7 +38,7 @@ export default function EditePage() {
     //             setName("")
     //             setAge("")
     //         })
-    }
+    // }
 
 //     return (
 //         <>
