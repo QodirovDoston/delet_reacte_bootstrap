@@ -1,14 +1,29 @@
 {
   "data": [
     {
-      "name": "hura",
-      "age": "48",
-      "id": 6
-    },
-    {
       "name": "shuhrat ",
       "age": "20",
       "id": 7
+    },
+    {
+      "name": "doston",
+      "age": "23",
+      "id": 8
+    },
+    {
+      "name": "dostom",
+      "age": "dd",
+      "id": 12
+    },
+    {
+      "name": "sdjdnjdj",
+      "age": "jdjdj",
+      "id": 13
+    },
+    {
+      "name": "snmsms",
+      "age": "sj",
+      "id": 14
     }
   ]
 }

@@ -4,7 +4,6 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function Edit() {
-
     const [name, setName] = useState([])
     const [age, setAge] = useState([])
     const navigate = useNavigate()
@@ -19,10 +18,8 @@ export default function Edit() {
             })
     }
     useEffect(() => {
-        getOne()
-
-    }, [])
-
+        getOne(id)
+    }, [ ])
     const editData = (edit_id) => {
         let obj_edit = {
             name: name,
@@ -41,7 +38,7 @@ export default function Edit() {
             <Container fluid="md">
                 <Row className="justify-content-center mt-5">
                     <Col xs={6}>
-                        <Form onSubmit={editData}>
+                        <Form key={res.id}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Your full name</Form.Label>
                                 <Form.Control

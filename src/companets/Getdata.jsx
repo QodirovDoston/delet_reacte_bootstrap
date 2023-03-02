@@ -46,10 +46,12 @@ export default function GetData() {
                         <td>{data.id}</td>
                         <td>{data.name}</td>
                         <td>{data.age}</td>  
-                        <Link to={"/result/edite:id"}>
+                        <td>
+                          <Link to={"/result/edite:id"}>
                           <button>edite</button>
                         </Link>
                         <button onClick={() => delet_func(data.id)}>delete</button>
+                        </td>
                       </tr>
                     </>
                   )

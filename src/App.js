@@ -7,10 +7,10 @@ import Edit from "./companets/Edite";
 
 function App() {
   return (
-
     <>
       <Navbarfunc />
       <Routes>
+        {/* <Header/> */}
         <Route path="/home" element={<Header />} />
         <Route path="/result" element={<Getdata />} />
         <Route path="/result/edite:id" element={<Edit/>} />
