@@ -16,7 +16,7 @@ function Header() {
       name: user,
       age: age
     }
-    axios.post("http://localhost:3000/data", obj)
+    axios.post("https://dbjsoninserver-production.up.railway.app/data", obj)
     .then((res) => {
       alert(res.statusText)
       setAge("")

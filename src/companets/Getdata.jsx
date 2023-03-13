@@ -9,14 +9,14 @@ export default function GetData() {
 
 
   const GetAllData = () => {
-    axios.get("http://localhost:3000/data")
+    axios.get("https://dbjsoninserver-production.up.railway.app/data")
       .then((data) => {
         getUser(data.data)
       })
   }
 
   const delet_func = (id) => {
-    axios.delete(`http://localhost:3000/data/${id}`)
+    axios.delete(`https://dbjsoninserver-production.up.railway.app/data/${id}`)
       .then((res) => {
         alert(res.statusText)
       })

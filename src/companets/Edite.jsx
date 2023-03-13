@@ -10,7 +10,7 @@ export default function Edit() {
     const { id } = useParams()
 
     const getOne = () => {
-        axios.get(`http://localhost:3000/data/${id}`)
+        axios.get(`https://dbjsoninserver-production.up.railway.app/data/${id}`)
             .then((res) => {
                 console.log(res)
                 setAge(res.data.age)
@@ -25,7 +25,7 @@ export default function Edit() {
             name: name,
             age: age
         }
-        axios.put(`http://localhost:3000/data/${edit_id}`, obj_edit)
+        axios.put(`https://dbjsoninserver-production.up.railway.app/data/${edit_id}`, obj_edit)
             .then(res => {
                 alert(res.statusText)
                 navigate("/result")
@@ -38,7 +38,7 @@ export default function Edit() {
             <Container fluid="md">
                 <Row className="justify-content-center mt-5">
                     <Col xs={6}>
-                        <Form key={res.id}>
+                        <Form key={id}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Your full name</Form.Label>
                                 <Form.Control
